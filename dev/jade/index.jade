@@ -32,3 +32,34 @@ block content
             p.info__text Методика оценки личности позволяет за 2 минуты узнать о человеке 98% скрытой информации. Без
                 |эзотерики и магии . Диагностика позволяет сделать едва ли ни безошибочно  выбрать партнера для
                 |брака , сотрудника , партнёра для бизнеса , понять поведение ребёнка и обезопасить его будущее
+    .matrix
+        h2.matrix__title Узнай
+            span  прямо сейчас
+            |  свою психоматрицу
+        p.matrix__text Психоматрица по дате рождения (Квадрат Пифагора)
+        .wrapper.matrix__wrapper
+            .matrix__form
+                input(name='date' class='matrix__input' placeholder='Выберите дату')
+            .result
+                .result__loader
+                    .result__image
+                .result__hidden
+                    p.matrix__text Отлично! Это Ваша психоматрица или инструкция к твоей жизни
+                    .result__wrap
+                        .result__left
+                            .result__big
+                                .result__row.result__flex
+                                    .result__info Дата рождение
+                                    .result__answer(data-answer='date')
+                                .result__row.result__flex
+                                    .result__info Доп. числа
+                                    .result__answwer(data-answer='second-number')
+                                .result__row.result__flex
+                                    .result__info Число судьбы
+                                    .result__answer(data-answer='destiny-number')
+                        .result__right
+
+
+        h3.matrix__subtitle ПОЛУЧИТЕ МОМЕНТАЛЬНЫЙ РАССЧЕТ<br/>ПО ДАТЕ РОЖДЕНИЯ
+        a(href="#").matrix__button Получить моментально
+        p.matrix__small Моментально на Ваш E-mail нумеролог пришлет заказанный Вами рассчет по дате

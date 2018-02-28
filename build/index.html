@@ -9,7 +9,7 @@
 		<link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
 		<link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.4/datepicker.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/main.min.css" media="screen, projection, print">
 		<title>123</title>
 	</head>
@@ -63,6 +63,46 @@
 				</p>
 			</div>
 		</div>
+		<div class="matrix">
+			<h2 class="matrix__title">Узнай<span> прямо сейчас</span> свою психоматрицу</h2>
+			<p class="matrix__text">Психоматрица по дате рождения (Квадрат Пифагора)</p>
+			<div class="wrapper matrix__wrapper">
+				<div class="matrix__form">
+					<input name="date" placeholder="Выберите дату" class="matrix__input">
+				</div>
+				<div class="result">
+					<div class="result__loader">
+						<div class="result__image"></div>
+					</div>
+					<div class="result__hidden">
+						<p class="matrix__text">Отлично! Это Ваша психоматрица или инструкция к твоей жизни</p>
+						<div class="result__wrap">
+							<div class="result__left">
+								<div class="result__big">
+									<div class="result__row result__flex">
+										<div class="result__info">Дата рождение</div>
+										<div data-answer="date" class="result__answer"></div>
+									</div>
+									<div class="result__row result__flex">
+										<div class="result__info">Доп. числа</div>
+										<div data-answer="second-number" class="result__answwer"></div>
+									</div>
+									<div class="result__row result__flex">
+										<div class="result__info">Число судьбы</div>
+										<div data-answer="destiny-number" class="result__answer"></div>
+									</div>
+								</div>
+							</div>
+							<div class="result__right"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h3 class="matrix__subtitle">ПОЛУЧИТЕ МОМЕНТАЛЬНЫЙ РАССЧЕТ<br/>ПО ДАТЕ РОЖДЕНИЯ</h3><a href="#" class="matrix__button">Получить моментально</a>
+			<p class="matrix__small">Моментально на Ваш E-mail нумеролог пришлет заказанный Вами рассчет по дате</p>
+		</div><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.4/datepicker.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.4/i18n/datepicker.ru-RU.js"></script>
 		<script src="js/plugins.min.js"></script>
 		<script src="js/main.min.js"></script>
 	</body>
