@@ -1,0 +1,22 @@
+.wrapper
+  max-width: 1170px
+  width: 100%
+  margin: 0 auto
+  &_flex
+    display: flex
+  &_center
+    justify-content: center
+  &_nowrap
+    flex-wrap: nowrap
+  &_vertical-center
+    align-items: center
+  &_full
+    max-width: 100%
+
+
+@media screen and (max-width: 1170px)
+  .wrapper
+    padding-left: 10px
+    padding-right: 10px
+    &_full
+      padding: 0

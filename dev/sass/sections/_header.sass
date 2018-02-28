@@ -1,0 +1,50 @@
+.header
+  &__wrapper
+    position: relative
+    padding-top: 20px
+    padding-bottom: 80px
+  &__content
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      bottom: -20px
+      left: -20px
+      background-image: url(../../img/background-left-bottom-line.png)
+      width: 134px
+      height: 125px
+      -webkit-background-size: cover
+      background-size: cover
+      background-repeat: no-repeat
+  &__title
+    +fz(53.2)
+    padding: 0
+    margin: 0
+    font-weight: 300
+    line-height: 1.2
+    color: #000
+  &__text
+    +fz(34.8)
+    font-weight: 300
+    color: #000
+    margin: 0
+    padding-top: 20px
+
+@media screen and (max-width: 900px)
+  .header
+    &__title
+      +fz(40)
+      text-align: center
+    &__text
+      +fz(28)
+      text-align: center
+    &__wrapper
+      padding-top: 5px
+      padding-bottom: 60px
+
+@media screen and (max-width: 450px)
+  .header
+    &__title
+      +fz(32)
+    &__text
+      +fz(24)
