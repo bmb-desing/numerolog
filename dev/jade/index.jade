@@ -9,6 +9,7 @@ block content
             +social('inst')
             +social('vk')
             +social('telegram')
+            +social('youtube')
     header.header
         .wrapper.header__wrapper
             .header__content
@@ -53,13 +54,46 @@ block content
                                     .result__answer(data-answer='date')
                                 .result__row.result__flex
                                     .result__info Доп. числа
-                                    .result__answwer(data-answer='second-number')
+                                    .result__answer(data-answer='second-number')
                                 .result__row.result__flex
                                     .result__info Число судьбы
                                     .result__answer(data-answer='destiny-number')
+                            .result__cube
+                                .result__row
+                                    +res('Характер', 0)
+                                    +res('Здоровье', 3)
+                                    +res('Удача', 6)
+                                .result__row
+                                    +res('Энергия', 1)
+                                    +res('Логика', 4)
+                                    +res('Долг', 7)
+                                .result__row
+                                    +res('Интерес', 2)
+                                    +res('Труд', 5)
+                                    +res('Память', 8)
+                                .result__row
+                                    +res('Быт', 9)
                         .result__right
+                            +res_black('Темперамент', 10)
+                            +res_black('Цель', 11)
+                            +res_black('Семья', 12)
+                            +res_black('Привычки', 13)
 
-
-        h3.matrix__subtitle ПОЛУЧИТЕ МОМЕНТАЛЬНЫЙ РАССЧЕТ<br/>ПО ДАТЕ РОЖДЕНИЯ
-        a(href="#").matrix__button Получить моментально
-        p.matrix__small Моментально на Ваш E-mail нумеролог пришлет заказанный Вами рассчет по дате
+                    h3.matrix__subtitle ПОЛУЧИТЕ МОМЕНТАЛЬНЫЙ РАССЧЕТ<br/>ПО ДАТЕ РОЖДЕНИЯ
+                    a(href="#").matrix__button.disabled Получить моментально
+                    p.matrix__small Моментально на Ваш E-mail нумеролог пришлет заказанный Вами рассчет по дате
+    .inst
+        .wrapper.inst__wrapper
+            p.inst__first Теперь приглашаю Вас в блог <i>instagram</i> и узнать больше информации о себе от самого необычного нумеролога в Инстаграм Ольги Перцевой
+            p.inst__last Здесь самые интересные статьи, иследования и рекомендации для Вас
+            .inst__wrap
+                .inst__left
+                    a(href='#').inst__link.inst__link_inst
+                .inst__center
+                    ul
+                        li о детях
+                        li о семье
+                        li о профессии
+                        li о жизни
+                .inst__right
+                    a(href='#').inst__link.inst__link_telegram

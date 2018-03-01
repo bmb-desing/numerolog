@@ -45,12 +45,12 @@ var paths = {
         destination: 'build/fonts'
     },
     images: {
-        src: 'dev/images/**/*.*',
-        destination: 'build/images'
+        src: 'dev/img/**/*.*',
+        destination: 'build/img'
     },
     sprites: {
         src: 'dev/sprites/**/*.png',
-        destination: 'build/images/',
+        destination: 'build/img/',
         sass: 'dev/sass/'
     }
 };
@@ -134,7 +134,7 @@ gulp.task('sprite', function () {
     var spriteData = gulp.src('dev/sprites/*.png')
         .pipe(spritesmith({
             imgName: 'sprite.png',
-            imgPath: '../images/sprite.png',
+            imgPath: '../img/sprite.png',
             cssName: 'sprite.sass',
             padding: 10,
             algorithm: 'left-right'

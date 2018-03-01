@@ -4,6 +4,18 @@
     text-align: right
     flex-basis: 50%
     width: 50%
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      right: 0
+      top: 0
+      bottom: 0
+      background-image: url(../img/background-triangle-photo.png)
+      width: 113px
+      -webkit-background-size: cover
+      background-size: cover
+      background-repeat: no-repeat
   &__right
     flex-basis: 50%
     width: 50%
@@ -42,6 +54,8 @@
       width: 100%
       flex-basis: 100%
       text-align: center
+      &::after
+        display: none
     &__right
       width: 100%
       flex-basis: 100%

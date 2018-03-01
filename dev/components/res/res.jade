@@ -1,0 +1,11 @@
+mixin res(data, index)
+	.result__item
+		.result__context
+			h4=data
+			p(data-index=index)
+
+mixin res_black(data, index)
+	.result__item.result__item_full
+		.result__context
+			h4=data
+			p(data-index=index)
