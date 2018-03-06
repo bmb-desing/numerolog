@@ -5,7 +5,7 @@ var fullNumbers = [];
 var matrix = [];
 var destiny = 0;
 $(document).ready(function () {
-    $('.matrix__input').datepicker({
+    $('.matrix_date').datepicker({
         language: 'ru-RU',
         startView: 2
     });
@@ -144,6 +144,20 @@ function showMatrix() {
     });
 }
 function getLinks() {
-    var link = $('.matrix__button').attr('href', '/getpay?numbers='+matrix+'&destiny='+destiny);
-    $('.matrix__button').removeClass('disabled');
+    $('input[name=matrix]').val(matrix);
+    $('input[name=dates]').val(date);
+    $('input[name=destiny]').val(destiny);
 }
+$('.modal__open').click(function (event) {
+   var title = $(this).attr('data-theme');
+   $('.modal__title').text(title);
+   $('.modal').fadeIn();
+});
+$(document).mouseup(function (e) {
+    var elem = $('.modal');
+    var elems = $('.modal__wrapper');
+    if (!elems.is(e.target)
+        && elems.has(e.target).length === 0) {
+        $('.modal').fadeOut();
+    }
+});

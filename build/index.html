@@ -69,7 +69,7 @@
 			<p class="matrix__text">Психоматрица по дате рождения (Квадрат Пифагора)</p>
 			<div class="wrapper matrix__wrapper">
 				<div class="matrix__form">
-					<input name="date" placeholder="Выберите дату" class="matrix__input">
+					<input placeholder="Выберите дату" class="matrix__input matrix_date">
 				</div>
 				<div class="result">
 					<div class="result__loader">
@@ -191,8 +191,15 @@
 								</div>
 							</div>
 						</div>
-						<h3 class="matrix__subtitle">ПОЛУЧИТЕ МОМЕНТАЛЬНЫЙ РАССЧЕТ<br/>ПО ДАТЕ РОЖДЕНИЯ</h3><a href="#" class="matrix__button disabled">Получить моментально</a>
-						<p class="matrix__small">Моментально на Ваш E-mail нумеролог пришлет заказанный Вами рассчет по дате</p>
+						<form action="#" method="post">
+							<input type="hidden" name="matrix">
+							<input type="hidden" name="destiny">
+							<input type="hidden" name="dates">
+							<input type="email" name="mail" required placeholder="Укажите ваш E-mail" class="matrix__input input__mail">
+							<h3 class="matrix__subtitle">ПОЛУЧИТЕ МОМЕНТАЛЬНЫЙ РАССЧЕТ<br/>ПО ДАТЕ РОЖДЕНИЯ</h3>
+							<button class="matrix__button">Получить моментально</button>
+							<p class="matrix__small">Моментально на Ваш E-mail нумеролог пришлет заказанный Вами рассчет по дате</p>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -212,6 +219,189 @@
 						</ul>
 					</div>
 					<div class="inst__right"><a href="#" class="inst__link inst__link_telegram"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="pricing">
+			<h2 class="pricing__title">Цены</h2>
+			<h3 class="pricing__subtitle">Готовые предложения</h3>
+			<div class="pricing__wrapper wrapper_flex wrapper wrapper_wrap wrapper_vertical-sctrech">
+				<div class="price">
+					<div class="price__header">
+						<h3 class="price__title">Ребенок</h3>
+					</div>
+					<div class="price__text">
+						<div class="price__item">
+							<p>Описание</p><b>2000 руб<br/>33$</b>
+						</div>
+						<div class="price__item">
+							<p>С консультацией</p><b>5000 руб<br/>83$</b>
+						</div>
+						<button data-theme="Ребенок" class="modal__open price__button">Получить</button>
+					</div>
+				</div>
+				<div class="price">
+					<div class="price__header">
+						<h3 class="price__title">Взрослый</h3>
+					</div>
+					<div class="price__text">
+						<div class="price__item">
+							<p>Описание</p><b>2000 руб<br/>33$</b>
+						</div>
+						<div class="price__item">
+							<p>С консультацией</p><b>5000 руб<br/>83$</b>
+						</div>
+						<button data-theme="Взрослый" class="modal__open price__button">Получить</button>
+					</div>
+				</div>
+				<div class="price">
+					<div class="price__header">
+						<h3 class="price__title">Для взрослых</h3>
+						<h4 class="price__subtitle">(без совместимости)</h4>
+					</div>
+					<div class="price__text">
+						<div class="price__item">
+							<p>Описание</p><b>2000 руб<br/>33$</b>
+						</div>
+						<div class="price__item">
+							<p>С консультацией</p><b>5000 руб<br/>83$</b>
+						</div>
+						<button data-theme="Для взрослых" class="modal__open price__button">Получить</button>
+					</div>
+				</div>
+				<div class="price">
+					<div class="price__header">
+						<h3 class="price__title">Пара</h3>
+						<h4 class="price__subtitle">Совместимость</h4>
+					</div>
+					<div class="price__text">
+						<div class="price__item">
+							<p>Описание</p><b>2000 руб<br/>33$</b>
+						</div>
+						<div class="price__item">
+							<p>С консультацией</p><b>5000 руб<br/>83$</b>
+						</div>
+						<button data-theme="Пара" class="modal__open price__button">Получить</button>
+					</div>
+				</div>
+				<div class="price">
+					<div class="price__header">
+						<h3 class="price__title">Семья</h3>
+						<h4 class="price__subtitle">совместимость для всех</h4>
+					</div>
+					<div class="price__text">
+						<div class="price__item">
+							<p>Описание</p><b>2000 руб<br/>33$</b>
+						</div>
+						<div class="price__item">
+							<p>С консультацией</p><b>5000 руб<br/>83$</b>
+						</div>
+						<button data-theme="Семья" class="modal__open price__button">Получить</button>
+					</div>
+				</div>
+				<div class="price">
+					<div class="price__header">
+						<h3 class="price__title">Семья</h3>
+					</div>
+					<div class="price__text">
+						<div class="price__item">
+							<p>Описание</p><b>2000 руб<br/>33$</b>
+						</div>
+						<div class="price__item">
+							<p>С консультацией</p><b>5000 руб<br/>83$</b>
+						</div>
+						<button data-theme="Семья" class="modal__open price__button">Получить</button>
+					</div>
+				</div>
+				<div class="price">
+					<div class="price__header">
+						<h3 class="price__title">Семья</h3>
+					</div>
+					<div class="price__text">
+						<div class="price__item">
+							<p>Описание</p><b>2000 руб<br/>33$</b>
+						</div>
+						<div class="price__item">
+							<p>С консультацией</p><b>5000 руб<br/>83$</b>
+						</div>
+						<button data-theme="Семья" class="modal__open price__button">Получить</button>
+					</div>
+				</div>
+				<div class="price">
+					<div class="price__header">
+						<h3 class="price__title">Ваш вариант</h3>
+					</div>
+					<div class="price__text">
+						<div class="price__item">
+							<p>Возможны<br/>любые варианты</p>
+						</div>
+						<div class="price__item">
+							<p>Обсуждаем<br/>индивидуально</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pricing">
+			<h2 class="pricing__title">Журнал</h2>
+			<h3 class="pricing__subtitle">Мысли в слух</h3>
+			<div class="journal__wrapper wrapper_flex wrapper wrapper_wrap">
+				<div class="journal">
+					<div class="journal__left"><a href="#"><img src="img/journal.jpg" alt="123"></a></div>
+					<div class="journal__right">
+						<h3 class="journal__title"><a href="#">Заголовок статьи</a></h3>
+						<p class="journal__text">
+							превьюшка новости на главной  странице сайта Это тестовая
+							новость которая показывает как будет выглядеть превьюшка
+							новости на главной странице сайта Это тестовая новость которая
+							показывает как будет выглядеть превьюшка новости на главной
+							странице сайта
+						</p><a href="#" class="journal__link">читать ></a>
+					</div>
+				</div>
+				<div class="journal">
+					<div class="journal__left"><a href="#"><img src="img/journal.jpg" alt="123"></a></div>
+					<div class="journal__right">
+						<h3 class="journal__title"><a href="#">Заголовок статьи</a></h3>
+						<p class="journal__text">
+							превьюшка новости на главной  странице сайта Это тестовая
+							новость которая показывает как будет выглядеть превьюшка
+							новости на главной странице сайта Это тестовая новость которая
+							показывает как будет выглядеть превьюшка новости на главной
+							странице сайта
+						</p><a href="#" class="journal__link">читать ></a>
+					</div>
+				</div>
+				<div class="journal">
+					<div class="journal__left"><a href="#"><img src="img/journal.jpg" alt="123"></a></div>
+					<div class="journal__right">
+						<h3 class="journal__title"><a href="#">Заголовок статьи</a></h3>
+						<p class="journal__text">
+							превьюшка новости на главной  странице сайта Это тестовая
+							новость которая показывает как будет выглядеть превьюшка
+							новости на главной странице сайта Это тестовая новость которая
+							показывает как будет выглядеть превьюшка новости на главной
+							странице сайта
+						</p><a href="#" class="journal__link">читать ></a>
+					</div>
+				</div>
+			</div><a href="#" class="all__link">Читать все записи</a>
+		</div>
+		<footer class="footer">
+			<div class="footer__wrapper wrapper wrapper_nowrap wrapper_vertical-center wrapper_flex wrapper_center"><a href="#" class="footer__link footer__link_whatsapp"></a><a href="#" class="footer__link footer__link_inst"></a><a href="#" class="footer__link footer__link_vk"></a><a href="#" class="footer__link footer__link_telegram"></a><a href="#" class="footer__link footer__link_youtube"></a></div>
+		</footer>
+		<div class="modal">
+			<div class="modal__bg">
+				<div class="modal__wrapper">
+					<h3 class="modal__title">Ребенок</h3>
+					<form>
+						<input type="text" placeholder="Ваше имя" name="name" class="modal__input">
+						<input type="text" placeholder="Дата рождения" name="date" class="modal__input matrix_date">
+						<input type="phone" placeholder="Ваш телефон" name="phone" class="modal__input">
+						<input type="email" placeholder="Ваш E-mail" name="email" class="modal__input">
+						<button class="modal__button">Заказать</button>
+					</form>
+					<p class="modal__text">Мы храним и используем предоставленные данные<br/>согласно Федеральному закону 152-ФЗ<br/>«О персональных данных»</p>
 				</div>
 			</div>
 		</div><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

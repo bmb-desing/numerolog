@@ -1,0 +1,73 @@
+.price
+  transition: opacity .25s
+  opacity: .5
+  flex-basis: 24%
+  width: 24%
+  margin-bottom: 30px
+  &__header
+    position: relative
+    height: 52px
+  &__title
+    +fz(24)
+    font-weight: 300
+    padding: 0
+    margin: 0
+    letter-spacing: 0.66
+    color: #000
+  &__subtitle
+    position: absolute
+    bottom: 0
+    left: 0
+    font-weight: 300
+    color: #000
+    right: 0
+    +fz(13)
+    padding: 0
+    margin: 0
+
+  &__item
+    padding-top: 25px
+    p,b
+      padding: 0
+      margin: 0
+      +fz(16.9)
+      font-weight: 300
+      color: #000
+
+
+  &__button
+    display: block
+    width: 100%
+    cursor: pointer
+    outline: none
+    border: none
+    background-color: #434242
+    height: 45px
+    line-height: 45px
+    margin-top: 20px
+    color: #fff
+    +fz(16.9)
+    font-weight: 300
+
+  &:hover
+    opacity: 1
+
+.price
+  .price__text
+    .price__item:first-child
+      padding-top: 4px
+    .price__item:last-child
+      padding-top: 60px
+
+@media screen and (max-width: 768px)
+  .price
+    opacity: 1
+    flex-basis: 48%
+    width: 48%
+
+@media screen and (max-width: 480px)
+  .price
+    flex-basis: 100%
+    width: 100%
+  .price .price__text .price__item:last-child
+    padding-top: 20px

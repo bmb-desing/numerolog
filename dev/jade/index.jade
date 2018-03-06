@@ -40,7 +40,7 @@ block content
         p.matrix__text Психоматрица по дате рождения (Квадрат Пифагора)
         .wrapper.matrix__wrapper
             .matrix__form
-                input(name='date' class='matrix__input' placeholder='Выберите дату')
+                input(class='matrix__input' placeholder='Выберите дату' class='matrix_date')
             .result
                 .result__loader
                     .result__image
@@ -78,10 +78,14 @@ block content
                             +res_black('Цель', 11)
                             +res_black('Семья', 12)
                             +res_black('Привычки', 13)
-
-                    h3.matrix__subtitle ПОЛУЧИТЕ МОМЕНТАЛЬНЫЙ РАССЧЕТ<br/>ПО ДАТЕ РОЖДЕНИЯ
-                    a(href="#").matrix__button.disabled Получить моментально
-                    p.matrix__small Моментально на Ваш E-mail нумеролог пришлет заказанный Вами рассчет по дате
+                    form(action='#' method='post')
+                        input(type='hidden' name='matrix')
+                        input(type='hidden' name='destiny')
+                        input(type='hidden' name='dates')
+                        input(type='email' name='mail' required placeholder='Укажите ваш E-mail' class='matrix__input input__mail')
+                        h3.matrix__subtitle ПОЛУЧИТЕ МОМЕНТАЛЬНЫЙ РАССЧЕТ<br/>ПО ДАТЕ РОЖДЕНИЯ
+                        button.matrix__button Получить моментально
+                        p.matrix__small Моментально на Ваш E-mail нумеролог пришлет заказанный Вами рассчет по дате
     .inst
         .wrapper.inst__wrapper
             p.inst__first Теперь приглашаю Вас в блог <i>instagram</i> и узнать больше информации о себе от самого необычного нумеролога в Инстаграм Ольги Перцевой
@@ -97,3 +101,86 @@ block content
                         li о жизни
                 .inst__right
                     a(href='#').inst__link.inst__link_telegram
+    .pricing
+        h2.pricing__title Цены
+        h3.pricing__subtitle Готовые предложения
+        .pricing__wrapper.wrapper_flex.wrapper.wrapper_wrap.wrapper_vertical-sctrech
+            +price('Ребенок')
+            +price('Взрослый')
+            +price_sub('Для взрослых', '(без совместимости)')
+            +price_sub('Пара', 'Совместимость')
+            +price_sub('Семья','совместимость для всех')
+            +price('Семья')
+            +price('Семья')
+            .price
+                .price__header
+                    h3.price__title Ваш вариант
+                .price__text
+                    .price__item
+                        p Возможны<br/>любые варианты
+                    .price__item
+                        p Обсуждаем<br/>индивидуально
+    .pricing
+        h2.pricing__title Журнал
+        h3.pricing__subtitle Мысли в слух
+        .journal__wrapper.wrapper_flex.wrapper.wrapper_wrap
+            .journal
+                .journal__left
+                    a(href='#')
+                        img(src='img/journal.jpg' alt='123')
+                .journal__right
+                    h3.journal__title
+                        a(href='#') Заголовок статьи
+                    p.journal__text превьюшка новости на главной  странице сайта Это тестовая
+                        | новость которая показывает как будет выглядеть превьюшка
+                        | новости на главной странице сайта Это тестовая новость которая
+                        | показывает как будет выглядеть превьюшка новости на главной
+                        | странице сайта
+                    a(href='#').journal__link читать >
+
+            .journal
+                .journal__left
+                    a(href='#')
+                        img(src='img/journal.jpg' alt='123')
+                .journal__right
+                    h3.journal__title
+                        a(href='#') Заголовок статьи
+                    p.journal__text превьюшка новости на главной  странице сайта Это тестовая
+                        | новость которая показывает как будет выглядеть превьюшка
+                        | новости на главной странице сайта Это тестовая новость которая
+                        | показывает как будет выглядеть превьюшка новости на главной
+                        | странице сайта
+                    a(href='#').journal__link читать >
+
+            .journal
+                .journal__left
+                    a(href='#')
+                        img(src='img/journal.jpg' alt='123')
+                .journal__right
+                    h3.journal__title
+                        a(href='#') Заголовок статьи
+                    p.journal__text превьюшка новости на главной  странице сайта Это тестовая
+                        | новость которая показывает как будет выглядеть превьюшка
+                        | новости на главной странице сайта Это тестовая новость которая
+                        | показывает как будет выглядеть превьюшка новости на главной
+                        | странице сайта
+                    a(href='#').journal__link читать >
+        a(href='#').all__link Читать все записи
+    footer.footer
+        .footer__wrapper.wrapper.wrapper_nowrap.wrapper_vertical-center.wrapper_flex.wrapper_center
+            a(href='#').footer__link.footer__link_whatsapp
+            a(href='#').footer__link.footer__link_inst
+            a(href='#').footer__link.footer__link_vk
+            a(href='#').footer__link.footer__link_telegram
+            a(href='#').footer__link.footer__link_youtube
+    .modal
+        .modal__bg
+            .modal__wrapper
+                h3.modal__title Ребенок
+                form
+                    input(type='text' placeholder='Ваше имя' name='name' class='modal__input')
+                    input(type='text' placeholder='Дата рождения' name='date' class='modal__input matrix_date')
+                    input(type='phone' placeholder='Ваш телефон' name='phone' class='modal__input')
+                    input(type='email' placeholder='Ваш E-mail' name='email' class='modal__input')
+                    button.modal__button Заказать
+                p.modal__text Мы храним и используем предоставленные данные<br/>согласно Федеральному закону 152-ФЗ<br/>«О персональных данных»

@@ -1,0 +1,27 @@
+mixin price(title)
+	.price
+		.price__header
+			h3.price__title=title
+		.price__text
+			.price__item
+				p Описание
+				b 2000 руб<br/>33$
+			.price__item
+				p С консультацией
+				b 5000 руб<br/>83$
+			button(class="modal__open price__button" data-theme=title) Получить
+
+mixin price_sub(title, subtitle)
+	.price
+		.price__header
+			h3.price__title=title
+			h4.price__subtitle=subtitle
+		.price__text
+			.price__item
+				p Описание
+				b 2000 руб<br/>33$
+			.price__item
+				p С консультацией
+				b 5000 руб<br/>83$
+			button(class="modal__open price__button" data-theme=title) Получить
+
