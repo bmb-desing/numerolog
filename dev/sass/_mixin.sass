@@ -10,3 +10,8 @@
 
 =fz($px)
   font-size: ($px/$default-size)+0em
+=clearfix
+  &::after
+    content: ''
+    display: table
+    clear: both

@@ -177,8 +177,9 @@ block content
         .modal__bg
             .modal__wrapper
                 h3.modal__title Ребенок
-                form
+                form.modal__form
                     input(type='text' placeholder='Ваше имя' name='name' class='modal__input')
+                    span.error Поле обязательно для заполнения
                     input(type='text' placeholder='Дата рождения' name='date' class='modal__input matrix_date')
                     input(type='phone' placeholder='Ваш телефон' name='phone' class='modal__input')
                     input(type='email' placeholder='Ваш E-mail' name='email' class='modal__input')

@@ -1,0 +1,24 @@
+extends layouts/layout
+include  ../components/**/*.jade
+block title
+	| 123
+block content
+	header.social
+		ul.social__list.wrapper_center.wrapper_flex.wrapper_nowrap.wrapper_vertical-center.wrapper
+			+social('whatsapp')
+			+social('inst')
+			+social('vk')
+			+social('telegram')
+			+social('youtube')
+	.found
+		.found__wrapper
+			h1.found__title 404
+			h2.found__subtitle Страница не найдена
+			a(href='#').all__link.found__link Перейти на главную
+	footer.footer
+		.footer__wrapper.wrapper.wrapper_nowrap.wrapper_vertical-center.wrapper_flex.wrapper_center
+			a(href='#').footer__link.footer__link_whatsapp
+			a(href='#').footer__link.footer__link_inst
+			a(href='#').footer__link.footer__link_vk
+			a(href='#').footer__link.footer__link_telegram
+			a(href='#').footer__link.footer__link_youtube

@@ -1,0 +1,41 @@
+extends layouts/layout
+include  ../components/**/*.jade
+block title
+	| 123
+block content
+	header.social
+		ul.social__list.wrapper_center.wrapper_flex.wrapper_nowrap.wrapper_vertical-center.wrapper
+			+social('whatsapp')
+			+social('inst')
+			+social('vk')
+			+social('telegram')
+			+social('youtube')
+	h1.content__title Заголовок статьи
+	.content
+		p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, deserunt dolor ducimus eaque eius error est fugit harum laboriosam laborum modi placeat quas quibusdam sed veniam vitae voluptate voluptatem, voluptatum?
+		ul
+			li	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam architecto debitis doloremque, dolores ducimus eius eos excepturi, explicabo magni minus modi nam nostrum officiis pariatur reprehenderit tenetur vitae? Maxime.
+			li	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque deleniti dignissimos distinctio ducimus earum eligendi facere fugiat illo illum iure, officiis placeat quae quidem ratione repellendus similique totam veritatis.
+		ol
+			li Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias aliquid consectetur, deleniti dolor hic inventore iure magni odio odit officiis qui quisquam quo quos sed veritatis vero voluptatum? Atque!
+			li Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ex facere possimus quis suscipit unde voluptas. Dignissimos dolorum hic, ipsa ipsam molestias mollitia nemo, nesciunt non optio quod voluptas voluptatibus!
+		h2 lorem
+		h3 lorem
+		h4 lorem
+		h1 lorem
+		h5 lorem
+		h6 lorem
+		img(src='img/me-img.jpg' style='float: left; padding-right: 20px; padding-top:20px; padding-bottom: 20px' alt='123')
+		p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet at deleniti dignissimos doloribus, harum itaque magnam, neque provident qui quis quo quos sapiente similique sunt, temporibus ullam? Facere, voluptatum.
+		p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, delectus deserunt dolores, earum esse incidunt iste libero maiores modi neque nulla obcaecati omnis porro provident quae recusandae, sed totam voluptas?
+		small Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aperiam consectetur distinctio eius esse exercitationem, explicabo, fugit incidunt iure labore laudantium magni, quibusdam quis saepe similique vero. Accusamus, non?
+		b Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi, vitae. Accusantium aliquid amet aspernatur, doloribus iusto necessitatibus obcaecati possimus provident quia ratione repellat repudiandae rerum soluta tempore voluptas voluptate!
+		p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolor ipsam nesciunt omnis perferendis temporibus. Animi asperiores aspernatur assumenda autem, eum facilis fugiat quidem recusandae repellendus soluta? Ad, eos perspiciatis.
+		p Lorem ipsum dolor sit amet, consectetur adipisicing elit. A laudantium minima quae? A adipisci aspernatur blanditiis culpa earum error et, illo ipsa ipsum maxime minima pariatur, quos, tempore veniam vero.
+	footer.footer
+		.footer__wrapper.wrapper.wrapper_nowrap.wrapper_vertical-center.wrapper_flex.wrapper_center
+			a(href='#').footer__link.footer__link_whatsapp
+			a(href='#').footer__link.footer__link_inst
+			a(href='#').footer__link.footer__link_vk
+			a(href='#').footer__link.footer__link_telegram
+			a(href='#').footer__link.footer__link_youtube

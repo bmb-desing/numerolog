@@ -120,12 +120,12 @@ gulp.task('clean', function() {
 });
 gulp.task('image-compile', function () {
     gulp.src(paths.images.src)
-        /*.pipe(imagemin({
+        .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()],
             interlaced: true
-        }))*/
+        }))
         .pipe(gulp.dest(paths.images.destination));
 });
 
