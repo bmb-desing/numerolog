@@ -1,8 +1,8 @@
-const res =  {
+const price =  {
 	// Your code here
  };
 
-const price =  {
+const res =  {
 	// Your code here
  };
 
